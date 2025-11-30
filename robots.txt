@@ -1,0 +1,26 @@
+# Robots.txt pour Ménage Bo-Bien
+# Entretien ménager professionnel - Rive-Nord de Montréal
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.menagebobien.com/sitemap.xml
+
+# Bloquer les fichiers système et de configuration
+Disallow: /css/
+Disallow: /js/
+Disallow: *.md$
+
+# Bloquer les fichiers de documentation
+Disallow: /GALLERY-LAYOUT.md
+Disallow: /SERVICES-LAYOUT.md
+Disallow: /RESPONSIVE-SUMMARY.md
+Disallow: /README.md
+Disallow: /SEO-AUDIT-REPORT.md
+
+# Permettre l'indexation des images
+Allow: /images/
+
+# Crawler rate (optionnel - évite surcharge serveur)
+Crawl-delay: 1

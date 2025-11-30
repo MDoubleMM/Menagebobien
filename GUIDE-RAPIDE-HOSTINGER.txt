@@ -1,0 +1,178 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║           🚀 GUIDE RAPIDE - INSTALLATION HOSTINGER                ║
+║                     Ménage Bo-Bien                                ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+Version 4.0 - Structure : index.html + dossier public/
+Date : 22 octobre 2025
+
+═══════════════════════════════════════════════════════════════════
+
+📁 STRUCTURE FINALE
+
+Racine du projet :
+├── index.html                    ← Redirection vers public/
+└── public/                       ← TOUT LE SITE ICI
+    ├── index.html                ← Page d'accueil réelle
+    ├── css/, js/, images/, blog/
+    └── [42+ pages HTML]
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 INSTALLATION (3 ÉTAPES)
+
+1️⃣  TÉLÉCHARGER
+    - Cliquez sur "Download" ou "Télécharger ZIP"
+    - Enregistrez menagebobien.zip
+
+2️⃣  UPLOADER SUR HOSTINGER
+    - Connectez-vous à Hostinger
+    - File Manager → public_html/
+    - Uploadez menagebobien.zip
+    - Clic droit → Extract (Extraire)
+    - Supprimez le ZIP
+
+3️⃣  TESTER
+    - Visitez : https://www.menagebobien.com/
+    - Vous serez redirigé vers /public/index.html
+    - ✅ Le site s'affiche !
+
+═══════════════════════════════════════════════════════════════════
+
+🌐 RÉSULTAT SUR HOSTINGER
+
+Après extraction dans public_html :
+
+public_html/
+├── index.html              ← Redirige vers public/
+└── public/                 ← Site complet
+    ├── index.html          ← Page principale
+    ├── css/
+    ├── js/
+    ├── images/             ← ⚠️ Uploader 5 images
+    ├── blog/
+    └── [tous les HTML]
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 URLs DU SITE
+
+Page d'accueil :
+https://www.menagebobien.com/
+    ↓ (redirige automatiquement)
+https://www.menagebobien.com/public/index.html
+
+Services :
+https://www.menagebobien.com/public/menage-residentiel.html
+https://www.menagebobien.com/public/menage-commercial.html
+
+Villes :
+https://www.menagebobien.com/public/entretien-menager-laval.html
+https://www.menagebobien.com/public/entretien-menager-terrebonne.html
+
+Blog :
+https://www.menagebobien.com/public/blog.html
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️  IMPORTANT - IMAGES
+
+Les 5 images dans public/images/ sont vides (0 octets).
+
+Action requise :
+1. Après extraction du ZIP sur Hostinger
+2. Allez dans public_html/public/images/
+3. Uploadez manuellement les 5 images JPG :
+   - promo-avant-apres.jpg
+   - office-cleaning.jpg
+   - kitchen-cleaning.jpg
+   - bathroom-cleaning.jpg
+   - window-cleaning.jpg
+
+📝 Voir : public/images/LIRE-IMPORTANT.txt
+
+═══════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST
+
+Avant de télécharger :
+□ Lire ce guide
+□ Prêt à uploader sur Hostinger
+
+Après extraction :
+□ ZIP extrait dans public_html/
+□ Structure : public_html/index.html + public_html/public/
+□ 5 images uploadées dans public_html/public/images/
+
+Tests :
+□ https://www.menagebobien.com/ fonctionne
+□ Redirige vers /public/index.html
+□ Titre "Ménage Bo-Bien" sur 2 lignes
+□ Images visibles
+□ Navigation fonctionne
+
+═══════════════════════════════════════════════════════════════════
+
+📖 DOCUMENTATION COMPLÈTE
+
+📄 ARBORESCENCE-FINALE.md
+   → Structure détaillée avec diagramme complet
+
+📄 INSTALLATION-HOSTINGER.md
+   → Guide complet avec alternatives FTP
+
+═══════════════════════════════════════════════════════════════════
+
+💡 POURQUOI CETTE STRUCTURE ?
+
+✅ Fichier index.html à la racine → Redirection propre
+✅ Dossier public/ → Tout le site organisé
+✅ Facile à uploader → Un seul ZIP
+✅ Compatible Hostinger → Extraction directe
+✅ Évolutif → Ajout facile de pages
+
+═══════════════════════════════════════════════════════════════════
+
+🔧 DÉPANNAGE
+
+Site ne s'affiche pas ?
+→ Vérifiez que index.html existe dans public_html/
+→ Vérifiez que le dossier public/ existe
+
+Images manquantes ?
+→ Uploadez les 5 images dans public_html/public/images/
+
+Redirection ne fonctionne pas ?
+→ Videz le cache du navigateur (Ctrl+Shift+R)
+→ Vérifiez index.html contient la redirection vers public/
+
+═══════════════════════════════════════════════════════════════════
+
+📞 SUPPORT
+
+Questions techniques :
+📧 menagebobien@hotmail.com
+📱 514-586-9097
+
+Support Hostinger :
+🌐 https://www.hostinger.com
+💬 Chat 24/7 disponible
+
+═══════════════════════════════════════════════════════════════════
+
+🎉 PRÊT !
+
+Votre site Ménage Bo-Bien avec 42+ pages est maintenant
+prêt à être déployé sur Hostinger !
+
+Structure : index.html + public/
+Installation : 3 étapes simples
+Résultat : Site professionnel en ligne
+
+Téléchargez le ZIP et suivez les 3 étapes ci-dessus ! 🚀
+
+═══════════════════════════════════════════════════════════════════
+
+Version : 4.0 (index.html + public/)
+Date : 22 octobre 2025
+Statut : ✅ Prêt pour Production
