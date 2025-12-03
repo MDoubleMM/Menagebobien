@@ -1,0 +1,41 @@
+⚠️ IMPORTANT - IMAGES À COPIER MANUELLEMENT ⚠️
+
+Les images suivantes doivent être copiées manuellement du dossier racine "images/" vers "public/images/" :
+
+📁 Depuis : /images/
+📁 Vers : /public/images/
+
+📷 FICHIERS À COPIER :
+1. promo-avant-apres.jpg (66 KB)
+2. office-cleaning.jpg (92 KB)
+3. kitchen-cleaning.jpg (69 KB)
+4. bathroom-cleaning.jpg (52 KB)
+5. window-cleaning.jpg (102 KB)
+
+🔧 INSTRUCTIONS :
+
+Option 1 - Via l'interface web :
+1. Téléchargez ces 5 images depuis le dossier /images/
+2. Placez-les dans le dossier /public/images/
+
+Option 2 - Via FTP (après upload sur serveur) :
+1. Si les images ne s'affichent pas sur votre site
+2. Uploadez manuellement ces 5 images depuis /images/ vers /public/images/
+
+Option 3 - Copie locale (avant upload) :
+1. Sur votre ordinateur, copiez manuellement ces 5 fichiers
+2. De : projet/images/
+3. Vers : projet/public/images/
+4. Puis uploadez tout le dossier public/ sur votre serveur
+
+✅ VÉRIFICATION :
+Après avoir copié les images, vérifiez que votre page d'accueil affiche :
+- Image de cuisine (hero section)
+- Image de salle de bain
+- Image de bureau
+- Image de vitres
+- Image avant/après (section promo)
+
+🌐 URL de test : https://www.menagebobien.com/
+
+📞 Besoin d'aide ? Contactez : menagebobien@hotmail.com ou 514-586-9097

@@ -1,0 +1,38 @@
+⚠️⚠️⚠️ IMAGES MANQUANTES - ACTION REQUISE ⚠️⚠️⚠️
+
+Les 5 images ci-dessous ont une taille de 0 octets.
+Vous devez les télécharger depuis l'interface web avant de créer le ZIP.
+
+📷 IMAGES À TÉLÉCHARGER (5 fichiers) :
+
+Allez dans le dossier /images/ de l'interface web et téléchargez :
+
+1. ✅ promo-avant-apres.jpg (66 KB)
+2. ✅ office-cleaning.jpg (92 KB)
+3. ✅ kitchen-cleaning.jpg (69 KB)
+4. ✅ bathroom-cleaning.jpg (52 KB)
+5. ✅ window-cleaning.jpg (102 KB)
+
+📥 COMMENT FAIRE :
+
+Méthode A - Avant de créer le ZIP :
+1. Dans l'interface web, naviguez vers /images/
+2. Téléchargez chaque image individuellement
+3. Uploadez-les dans le dossier /images/ (remplacer les fichiers vides)
+4. Créez le ZIP ensuite
+
+Méthode B - Après extraction sur Hostinger :
+1. Extrayez le ZIP sur Hostinger
+2. Dans Hostinger File Manager, allez dans images/
+3. Uploadez manuellement les 5 images JPG
+4. Vérifiez que chaque image a une taille supérieure à 0 Ko
+
+⚠️ SANS CES IMAGES, VOTRE SITE N'AFFICHERA PAS LES PHOTOS !
+
+Les images doivent être dans : public_html/images/
+
+✅ VÉRIFICATION :
+Après avoir uploadé les images, visitez :
+https://www.menagebobien.com/
+
+Si vous voyez les photos sur la page d'accueil, c'est bon !
