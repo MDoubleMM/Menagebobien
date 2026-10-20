@@ -238,3 +238,20 @@
     .bobien-consent-banner,
     .bobien-consent-dialog__panel { scroll-behavior: auto; }
 }
+
+/* Keep refusal and preference-saving actions equally prominent. */
+.bobien-consent-banner__actions #bobien-consent-reject,
+.bobien-consent-banner__actions #bobien-consent-accept,
+.bobien-consent-dialog__actions #bobien-consent-dialog-reject,
+.bobien-consent-dialog__actions #bobien-consent-save {
+    color: #fff;
+    background: var(--primary-blue, #0066cc);
+    border-color: var(--primary-blue, #0066cc);
+}
+.bobien-consent-required small {
+    display: block;
+    margin-top: .2rem;
+    color: #4f5d6b;
+    font-size: .88rem;
+    line-height: 1.45;
+}
