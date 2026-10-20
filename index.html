@@ -33,8 +33,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="privacy-consent.css?v=2">
+    <link rel="stylesheet" href="scrollcraft.css?v=1">
+    <link rel="stylesheet" href="home-experience.css?v=1">
 </head>
-<body>
+<body class="home-experience">
     <!-- Header & Navigation -->
     <header class="header">
         <nav class="navbar">
@@ -66,33 +68,54 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
+    <section id="accueil" class="hero home-hero" data-sc-act="flow" data-sc-drift="#173a3d">
+        <div class="home-hero__back" data-sc-parallax="0.12" aria-hidden="true"></div>
+        <div class="home-hero__shade" aria-hidden="true"></div>
+        <figure class="home-hero__photo" data-sc-parallax="-0.12">
+            <img id="heroSpaceImage" src="images/window-cleaning.jpg" alt="Lavage professionnel d’une fenêtre" data-alt-fr="Lavage professionnel d’une fenêtre" data-alt-en="Professional window cleaning">
+            <figcaption data-fr="La différence se voit dans les détails" data-en="The difference is in the details">La différence se voit dans les détails</figcaption>
+        </figure>
+        <svg class="home-hero__spark" data-sc-parallax="-0.2" viewBox="0 0 280 180" aria-hidden="true">
+            <path d="M8 156C58 114 93 132 128 86S203 44 272 20" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M125 53v22M114 64h22M221 91v16M213 99h16M55 28v14M48 35h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="128" cy="86" r="5" fill="currentColor"/><circle cx="221" cy="99" r="4" fill="currentColor"/>
+        </svg>
+        <div class="container hero-content" data-sc-cue="0.02 0.8">
             <div class="hero-text">
+                <p class="home-hero__eyebrow" data-fr="Service local · Depuis 2004" data-en="Locally owned · Since 2004">Service local · Depuis 2004</p>
                 <h1 class="hero-title">
-                    <span class="hero-title-main" data-fr="Ménage Bo-Bien" data-en="Ménage Bo-Bien">Ménage Bo-Bien</span>
-                    <span class="hero-title-sub" data-fr="Service de Ménage Professionnel sur la Rive-Nord de Montréal" data-en="Professional Cleaning Service on Montreal's North Shore">Service de Ménage Professionnel sur la Rive-Nord de Montréal</span>
+                    <span class="hero-title-main">Ménage Bo-Bien</span>
+                    <span class="hero-title-sub" data-fr="Un espace impeccable. L’esprit tranquille." data-en="A spotless space. Peace of mind.">Un espace impeccable. L’esprit tranquille.</span>
                 </h1>
-                <p class="hero-subtitle" data-fr="Service de nettoyage professionnel depuis 2004" data-en="Professional cleaning service since 2004">Service de nettoyage professionnel depuis 2004</p>
-                <p class="hero-slogan" data-fr="Ayez l'esprit tranquille !" data-en="Have peace of mind!">Ayez l'esprit tranquille !</p>
+                <p class="hero-subtitle" data-fr="Nettoyage résidentiel et commercial sur la Rive-Nord de Montréal." data-en="Residential and commercial cleaning across Montreal’s North Shore.">Nettoyage résidentiel et commercial sur la Rive-Nord de Montréal.</p>
+                <div class="home-space-picker">
+                    <p class="home-space-picker__label" data-fr="Quel espace voulez-vous confier à notre équipe ?" data-en="Which space would you like our team to care for?">Quel espace voulez-vous confier à notre équipe ?</p>
+                    <div class="home-space-picker__choices" role="group" aria-label="Choisir un espace">
+                        <button type="button" class="home-space-choice is-selected" data-space="residential" data-image="images/kitchen-cleaning.jpg" data-alt-fr="Cuisine résidentielle propre" data-alt-en="Clean residential kitchen" aria-pressed="true" data-fr="Ma maison" data-en="My home">Ma maison</button>
+                        <button type="button" class="home-space-choice" data-space="commercial" data-image="images/office-cleaning.jpg" data-alt-fr="Bureau professionnel entretenu" data-alt-en="Maintained professional office" aria-pressed="false" data-fr="Mon entreprise" data-en="My business">Mon entreprise</button>
+                        <button type="button" class="home-space-choice" data-space="window-cleaning" data-image="images/window-cleaning.jpg" data-alt-fr="Fenêtre nettoyée" data-alt-en="Cleaned window" aria-pressed="false" data-fr="Mes vitres" data-en="My windows">Mes vitres</button>
+                    </div>
+                    <p class="home-space-picker__status" id="spacePickerStatus" aria-live="polite" data-fr="Un service pensé pour votre quotidien." data-en="A service shaped around your day.">Un service pensé pour votre quotidien.</p>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary" data-fr="Estimation gratuite" data-en="Free estimate">Estimation gratuite</a>
-                    <a href="tel:5145869097" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i> 514-586-9097
-                    </a>
+                    <a href="#contact" class="btn btn-primary" data-fr="Demander une estimation" data-en="Request an estimate">Demander une estimation</a>
+                    <a href="tel:5145869097" class="btn btn-secondary"><i class="fas fa-phone"></i> 514-586-9097</a>
                 </div>
             </div>
+        </div>
+        <div class="home-hero__signature" aria-hidden="true">
+            <svg viewBox="0 0 140 140"><path d="M70 4c5 32 13 48 42 66-29 5-43 19-42 66-7-35-19-54-42-66C58 63 68 43 70 4Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 16v18M9 25h18M119 16v18M110 25h18M121 105v20M111 115h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services home-services" data-sc-act="pan" data-sc-span="2.6" data-sc-drift="#eef3eb">
         <div class="container">
+            <div class="home-services-stage" data-sc-stage>
             <h2 class="section-title" data-fr="Nos Services" data-en="Our Services">Nos Services</h2>
             <p class="section-subtitle" data-fr="Des solutions de nettoyage adaptées à tous vos besoins" data-en="Cleaning solutions tailored to all your needs">Des solutions de nettoyage adaptées à tous vos besoins</p>
             
-            <div class="services-grid">
+            <div class="services-grid" data-sc-pan="0.12" data-sc-in data-sc-stagger="80">
                 <!-- Service 1: Residential -->
                 <div class="service-card">
                     <div class="service-icon">
@@ -105,7 +128,8 @@
                         <li data-fr="Grand ménage saisonnier" data-en="Seasonal deep cleaning">Grand ménage saisonnier</li>
                         <li data-fr="Nettoyage écologique disponible" data-en="Eco-friendly cleaning available">Nettoyage écologique disponible</li>
                     </ul>
-                </div>
+                <a class="service-card__link" href="menage-residentiel.html" data-fr="Découvrir le service" data-en="Explore this service">Découvrir le service</a>
+                    </div>
 
                 <!-- Service 2: Commercial -->
                 <div class="service-card">
@@ -119,7 +143,8 @@
                         <li data-fr="Nettoyage après heures d'ouverture" data-en="After-hours cleaning">Nettoyage après heures d'ouverture</li>
                         <li data-fr="Désinfection complète" data-en="Complete disinfection">Désinfection complète</li>
                     </ul>
-                </div>
+                <a class="service-card__link" href="menage-commercial.html" data-fr="Découvrir le service" data-en="Explore this service">Découvrir le service</a>
+                    </div>
 
                 <!-- Service 3: Occasional -->
                 <div class="service-card">
@@ -133,7 +158,8 @@
                         <li data-fr="Nettoyage de fin de bail" data-en="End of lease cleaning">Nettoyage de fin de bail</li>
                         <li data-fr="Nettoyage après rénovations" data-en="Post-renovation cleaning">Nettoyage après rénovations</li>
                     </ul>
-                </div>
+                <a class="service-card__link" href="grand-menage.html" data-fr="Découvrir le service" data-en="Explore this service">Découvrir le service</a>
+                    </div>
 
                 <!-- Service 4: Window Cleaning -->
                 <div class="service-card">
@@ -147,32 +173,42 @@
                         <li data-fr="Résultats impeccables garantis" data-en="Flawless results guaranteed">Résultats impeccables garantis</li>
                         <li data-fr="Sans traces ni résidus" data-en="Streak-free and residue-free">Sans traces ni résidus</li>
                     </ul>
-                </div>
+                <a class="service-card__link" href="nettoyage-vitres.html" data-fr="Découvrir le service" data-en="Explore this service">Découvrir le service</a>
+                    </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Photo Gallery -->
-            <div class="photo-gallery">
+<section id="qualite" class="home-quality" data-sc-act="flow" data-sc-drift="#eef3eb">
+        <div class="container">
+            <div class="home-quality__intro" data-sc-in>
+                <p class="home-kicker" data-fr="Le soin dans chaque geste" data-en="Care in every detail">Le soin dans chaque geste</p>
+                <h2 class="section-title" data-fr="Le propre se remarque. Le soin aussi." data-en="Clean is easy to see. Care is felt.">Le propre se remarque. Le soin aussi.</h2>
+                <p class="section-subtitle" data-fr="Des espaces entretenus avec attention, pour que vous puissiez profiter pleinement de votre temps." data-en="Spaces cared for with attention, so you can spend your time on what matters.">Des espaces entretenus avec attention, pour que vous puissiez profiter pleinement de votre temps.</p>
+            </div>
+            <div class="home-quality__gallery" data-sc-in data-sc-stagger="90">
+                <div class="photo-gallery home-quality__photos">
                 <h3 class="gallery-title" data-fr="La Qualité de Notre Travail" data-en="The Quality of Our Work">La Qualité de Notre Travail</h3>
                 <div class="gallery-grid">
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-sc-reveal="up">
                         <img src="images/kitchen-cleaning.jpg" alt="Nettoyage résidentiel - Cuisine moderne" loading="lazy">
                         <div class="gallery-overlay">
                             <p data-fr="Cuisine - Résidentiel" data-en="Kitchen - Residential">Cuisine - Résidentiel</p>
                         </div>
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-sc-reveal="up">
                         <img src="images/bathroom-cleaning.jpg" alt="Nettoyage résidentiel - Salle de bain impeccable" loading="lazy">
                         <div class="gallery-overlay">
                             <p data-fr="Salle de bain - Résidentiel" data-en="Bathroom - Residential">Salle de bain - Résidentiel</p>
                         </div>
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-sc-reveal="up">
                         <img src="images/office-cleaning.jpg" alt="Nettoyage commercial - Bureau professionnel" loading="lazy">
                         <div class="gallery-overlay">
                             <p data-fr="Bureau - Commercial" data-en="Office - Commercial">Bureau - Commercial</p>
                         </div>
                     </div>
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-sc-reveal="up">
                         <img src="images/window-cleaning.jpg" alt="Lavage des vitres professionnel" loading="lazy">
                         <div class="gallery-overlay">
                             <p data-fr="Lavage des Vitres" data-en="Window Cleaning">Lavage des Vitres</p>
@@ -185,16 +221,17 @@
             <div class="promo-section">
                 <img src="images/promo-avant-apres.jpg" alt="Avant/Après - Résultats de nettoyage Ménage Bo-Bien" class="promo-image">
             </div>
+            </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="pourquoi" class="why-us">
-        <div class="container">
-            <h2 class="section-title" data-fr="Pourquoi Choisir Ménage Bo-Bien ?" data-en="Why Choose Ménage Bo-Bien?">Pourquoi Choisir Ménage Bo-Bien ?</h2>
-            <p class="section-subtitle" data-fr="Plus de 20 ans d'excellence au service des Montréalais" data-en="Over 20 years of excellence serving Montrealers">Plus de 20 ans d'excellence au service des Montréalais</p>
+    <section id="pourquoi" class="why-us home-proof" data-sc-act="pin" data-sc-span="2.8" data-sc-drift="#f8faf6">
+        <div class="container" data-sc-stage>
+            <h2 class="section-title" data-sc-cue="0 0.35" data-fr="Pourquoi Choisir Ménage Bo-Bien ?" data-en="Why Choose Ménage Bo-Bien?">Pourquoi Choisir Ménage Bo-Bien ?</h2>
+            <p class="section-subtitle" data-sc-cue="0.18 0.55" data-fr="Plus de 20 ans d'excellence au service des Montréalais" data-en="Over 20 years of excellence serving Montrealers">Plus de 20 ans d'excellence au service des Montréalais</p>
             
-            <div class="features-grid">
+            <div class="features-grid" data-sc-cue="0.38 1">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-award"></i>
@@ -247,12 +284,12 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="temoignages" class="testimonials">
-        <div class="container">
+    <section id="temoignages" class="testimonials home-testimonials" data-sc-act="pan" data-sc-span="3.6" data-sc-drift="#eaf1e9">
+        <div class="container" data-sc-stage>
             <h2 class="section-title" data-fr="Ce Que Nos Clients Disent" data-en="What Our Clients Say">Ce Que Nos Clients Disent</h2>
             <p class="section-subtitle" data-fr="Des témoignages authentiques de clients satisfaits" data-en="Authentic testimonials from satisfied clients">Des témoignages authentiques de clients satisfaits</p>
             
-            <div class="testimonials-grid">
+            <div class="testimonials-grid" data-sc-pan="0.1">
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-rating">
@@ -383,7 +420,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="apropos" class="about">
+    <section id="apropos" class="about home-about" data-sc-act="flow" data-sc-drift="#f5f7f0">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
@@ -394,7 +431,7 @@
                     
                     <p data-fr="Nous sommes fiers d'être une entreprise locale qui emploie des professionnels qualifiés et dévoués. Chaque membre de notre équipe est formé aux meilleures pratiques de nettoyage et s'engage à fournir un service de qualité supérieure." data-en="We are proud to be a local company that employs qualified and dedicated professionals. Each team member is trained in best cleaning practices and committed to providing superior service.">Nous sommes fiers d'être une entreprise locale qui emploie des professionnels qualifiés et dévoués. Chaque membre de notre équipe est formé aux meilleures pratiques de nettoyage et s'engage à fournir un service de qualité supérieure.</p>
                     
-                    <div class="about-stats">
+                    <div class="about-stats" data-sc-in data-sc-stagger="75">
                         <div class="stat">
                             <div class="stat-number">20+</div>
                             <div class="stat-label" data-fr="Ans d'expérience" data-en="Years of experience">Ans d'expérience</div>
@@ -409,10 +446,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-broom"></i>
-                        <p data-fr="Excellence en nettoyage depuis 2004" data-en="Cleaning excellence since 2004">Excellence en nettoyage depuis 2004</p>
+                <div class="about-image home-about__visual" data-sc-reveal="iris">
+                    <img src="images/promo-avant-apres.jpg" alt="Comparaison avant et après un nettoyage professionnel">
+                    <div class="home-about__mark" aria-hidden="true">
+                        <svg viewBox="0 0 120 120"><path d="M60 4c7 32 17 48 48 56-31 8-41 24-48 56C53 84 43 68 12 60 43 52 53 36 60 4Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="91" cy="25" r="3" fill="currentColor"/><circle cx="27" cy="88" r="3" fill="currentColor"/></svg>
                     </div>
                 </div>
             </div>
@@ -420,12 +457,12 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2 class="section-title" data-fr="Questions Fréquentes" data-en="Frequently Asked Questions">Questions Fréquentes</h2>
-            <p class="section-subtitle" data-fr="Trouvez rapidement les réponses à vos questions" data-en="Find quick answers to your questions">Trouvez rapidement les réponses à vos questions</p>
+    <section id="faq" class="faq home-faq" data-sc-act="pin" data-sc-span="2.5" data-sc-drift="#eaf1e9">
+        <div class="container" data-sc-stage>
+            <h2 class="section-title" data-sc-cue="0 0.26" data-fr="Questions Fréquentes" data-en="Frequently Asked Questions">Questions Fréquentes</h2>
+            <p class="section-subtitle" data-sc-cue="0.18 0.48" data-fr="Trouvez rapidement les réponses à vos questions" data-en="Find quick answers to your questions">Trouvez rapidement les réponses à vos questions</p>
             
-            <div class="faq-container">
+            <div class="faq-container" data-sc-cue="0.3 1">
                 <!-- FAQ Item 1 -->
                 <div class="faq-item">
                     <button class="faq-question">
@@ -507,7 +544,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact home-contact" data-sc-act="flow" data-sc-drift="#163a3e">
         <div class="container">
             <h2 class="section-title" data-fr="Contactez-Nous" data-en="Contact Us">Contactez-Nous</h2>
             <p class="section-subtitle" data-fr="Obtenez votre estimation gratuite dès aujourd'hui" data-en="Get your free estimate today">Obtenez votre estimation gratuite dès aujourd'hui</p>
@@ -639,6 +676,14 @@
     </footer>
 
     <script src="js/main.js"></script>
-  <script src="js/cookie-consent.js"></script>
+    <script src="js/scrollcraft.js"></script>
+    <script src="js/home-experience.js"></script>
+    <script>
+      if (window.matchMedia("(max-width: 600px) and (max-height: 740px)").matches) {
+        document.querySelectorAll(".home-proof, .home-faq").forEach((section) => { section.dataset.scAct = "flow"; });
+      }
+      if (window.ScrollCraft) window.ScrollCraft.mount(document.body);
+    </script>
+    <script src="js/cookie-consent.js"></script>
 </body>
 </html>
