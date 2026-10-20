@@ -27,7 +27,7 @@
     <meta name="twitter:description" content="Ménage Bo-Bien - Service de nettoyage résidentiel et commercial à Montréal depuis 2004">
     <meta name="twitter:image" content="https://www.menagebobien.com/images/og-image.jpg">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261020">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -80,7 +80,7 @@
             <path d="M125 53v22M114 64h22M221 91v16M213 99h16M55 28v14M48 35h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             <circle cx="128" cy="86" r="5" fill="currentColor"/><circle cx="221" cy="99" r="4" fill="currentColor"/>
         </svg>
-        <div class="container hero-content" data-sc-cue="0.02 0.8">
+        <div class="container hero-content" data-sc-cue="0 0.8 0">
             <div class="hero-text">
                 <p class="home-hero__eyebrow" data-fr="Service local · Depuis 2004" data-en="Locally owned · Since 2004">Service local · Depuis 2004</p>
                 <h1 class="hero-title">
@@ -90,7 +90,7 @@
                 <p class="hero-subtitle" data-fr="Nettoyage résidentiel et commercial sur la Rive-Nord de Montréal." data-en="Residential and commercial cleaning across Montreal’s North Shore.">Nettoyage résidentiel et commercial sur la Rive-Nord de Montréal.</p>
                 <div class="home-space-picker">
                     <p class="home-space-picker__label" data-fr="Quel espace voulez-vous confier à notre équipe ?" data-en="Which space would you like our team to care for?">Quel espace voulez-vous confier à notre équipe ?</p>
-                    <div class="home-space-picker__choices" role="group" aria-label="Choisir un espace">
+                    <div class="home-space-picker__choices" role="group" aria-label="Choisir un espace" data-label-fr="Choisir un espace" data-label-en="Choose a space">
                         <button type="button" class="home-space-choice is-selected" data-space="residential" data-image="images/kitchen-cleaning.jpg" data-alt-fr="Cuisine résidentielle propre" data-alt-en="Clean residential kitchen" aria-pressed="true" data-fr="Ma maison" data-en="My home">Ma maison</button>
                         <button type="button" class="home-space-choice" data-space="commercial" data-image="images/office-cleaning.jpg" data-alt-fr="Bureau professionnel entretenu" data-alt-en="Maintained professional office" aria-pressed="false" data-fr="Mon entreprise" data-en="My business">Mon entreprise</button>
                         <button type="button" class="home-space-choice" data-space="window-cleaning" data-image="images/window-cleaning.jpg" data-alt-fr="Fenêtre nettoyée" data-alt-en="Cleaned window" aria-pressed="false" data-fr="Mes vitres" data-en="My windows">Mes vitres</button>
@@ -447,7 +447,7 @@
                     </div>
                 </div>
                 <div class="about-image home-about__visual" data-sc-reveal="iris">
-                    <img src="images/promo-avant-apres.jpg" alt="Comparaison avant et après un nettoyage professionnel">
+                    <img src="images/promo-avant-apres.jpg" alt="Comparaison avant et après un nettoyage professionnel" data-alt-fr="Comparaison avant et après un nettoyage professionnel" data-alt-en="Before and after a professional cleaning">
                     <div class="home-about__mark" aria-hidden="true">
                         <svg viewBox="0 0 120 120"><path d="M60 4c7 32 17 48 48 56-31 8-41 24-48 56C53 84 43 68 12 60 43 52 53 36 60 4Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="91" cy="25" r="3" fill="currentColor"/><circle cx="27" cy="88" r="3" fill="currentColor"/></svg>
                     </div>
@@ -679,10 +679,12 @@
     <script src="js/scrollcraft.js"></script>
     <script src="js/home-experience.js"></script>
     <script>
-      if (window.matchMedia("(max-width: 600px) and (max-height: 740px)").matches) {
-        document.querySelectorAll(".home-proof, .home-faq").forEach((section) => { section.dataset.scAct = "flow"; });
-      }
-      if (window.ScrollCraft) window.ScrollCraft.mount(document.body);
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.matchMedia("(max-width: 600px) and (max-height: 740px)").matches) {
+          document.querySelectorAll(".home-proof, .home-faq").forEach((section) => { section.dataset.scAct = "flow"; });
+        }
+        if (window.ScrollCraft) window.ScrollCraft.mount(document.body);
+      }, { once: true });
     </script>
     <script src="js/cookie-consent.js"></script>
 </body>

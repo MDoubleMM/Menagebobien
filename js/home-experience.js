@@ -6,6 +6,7 @@
   const choices = Array.from(picker.querySelectorAll('.home-space-choice'));
   const photo = document.getElementById('heroSpaceImage');
   const status = document.getElementById('spacePickerStatus');
+  const choiceGroup = picker.querySelector('.home-space-picker__choices');
   const serviceField = document.getElementById('service');
   if (!photo || !status) return;
 
@@ -40,12 +41,17 @@
 
   choices.forEach((button) => button.addEventListener('click', () => update(button)));
 
-  const languageObserver = new MutationObserver(() => {
+  function syncLanguage() {
+    const lang = language();
     const selected = choices.find((button) => button.getAttribute('aria-pressed') === 'true');
-    if (selected) {
-      photo.alt = selected.getAttribute(language() === 'en' ? 'data-alt-en' : 'data-alt-fr') || '';
-      status.textContent = copy[selected.dataset.space]?.[language()] || '';
-    }
-  });
+    if (choiceGroup) choiceGroup.setAttribute('aria-label', choiceGroup.getAttribute(lang === 'en' ? 'data-label-en' : 'data-label-fr') || '');
+    photo.alt = selected
+      ? (selected.getAttribute(lang === 'en' ? 'data-alt-en' : 'data-alt-fr') || '')
+      : (photo.getAttribute(lang === 'en' ? 'data-alt-en' : 'data-alt-fr') || '');
+    if (selected) status.textContent = copy[selected.dataset.space]?.[lang] || '';
+  }
+
+  const languageObserver = new MutationObserver(syncLanguage);
+  syncLanguage();
   languageObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 })();
